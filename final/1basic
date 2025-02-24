@@ -1,0 +1,15 @@
+Ouro j;
+j -> 5;
+
+Ouro Moeda;
+Moeda -> 0;
+
+ Espia abrirmapa Moeda fecharmapa; 
+
+GritarProMar abrirmapa Moeda fecharmapa;
+GritarProMar abrirmapa "Printa ", Moeda, "\n" fecharmapa;
+ 
+Ouro bau[5];
+bau[1] -> 15; $comentario1
+
+$ comentario2

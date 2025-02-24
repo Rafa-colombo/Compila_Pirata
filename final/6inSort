@@ -1,0 +1,30 @@
+Ouro v[1024];
+Ouro N;
+Ouro i;
+Ouro j;
+Ouro aux;
+
+
+GritarProMar abrirmapa "Tamanho: " fecharmapa;
+Espia abrirmapa N fecharmapa;
+GritarProMar abrirmapa "Elementos: " fecharmapa;
+
+Navegar abrirmapa Ouro i -> 0; i<=N-1 ; i++ fecharmapa {
+ Espia abrirmapa v[i] fecharmapa; 
+}
+
+Navegar abrirmapa Ouro i -> 1; i<=N-1 ; i++ fecharmapa {
+ j -> i;
+ Remar abrirmapa abrirmapa j>0 fecharmapa E abrirmapa v[j] < v[j-1] fecharmapa fecharmapa {
+  aux -> v[j];
+  v[j] -> v[j-1];
+  v[j-1] -> aux;
+  j -> j - 1;
+ }
+}
+GritarProMar abrirmapa "Ordenado: " fecharmapa;
+Navegar abrirmapa Ouro i -> 0; i<=N-1 ; i++ fecharmapa {
+ GritarProMar abrirmapa v[i], " " fecharmapa;
+}
+GritarProMar abrirmapa "\n" fecharmapa;
+

@@ -1,0 +1,18 @@
+Ouro a;
+Ouro b;
+Ouro c;
+Ouro maior;
+
+GritarProMar abrirmapa "Digite: " fecharmapa;
+Espia abrirmapa a fecharmapa;
+Espia abrirmapa b fecharmapa;
+Espia abrirmapa c fecharmapa;
+
+Vendaval abrirmapa a > b E a > c fecharmapa { 
+ maior -> a;
+} Calmaria { 
+  Vendaval abrirmapa b > c fecharmapa { 
+   maior -> b;
+  } Calmaria { maior -> c; }}
+  
+GritarProMar abrirmapa maior, "\n" fecharmapa;

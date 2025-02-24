@@ -1,0 +1,80 @@
+printf "Tamanho: "
+read %r1024
+printf "Elementos: "
+mov %t0, 0
+mov %r1027, %t0
+label R00
+mov %t1, %r1024
+mov %t2, 1
+sub %t3, %t1, %t2
+lesseq %t4, %r1027, %t3
+jf %t4, R01
+mov %t5, %r1027
+read %t6
+store %t6, %t5(0)
+add %r1027, %r1027, 1
+jump R00
+label R01
+mov %t7, 0
+mov %r1025, %t7
+label R02
+mov %t8, %r1024
+mov %t9, 1
+sub %t10, %t8, %t9
+less %t11, %r1025, %t10
+jf %t11, R03
+mov %t12, 0
+mov %r1026, %t12
+label R04
+mov %t13, %r1024
+mov %t14, 2
+sub %t15, %t13, %t14
+less %t16, %r1026, %t15
+jf %t16, R05
+mov %t17, %r1026
+load %t18, %t17(0) 
+mov %t19, %r1026
+mov %t20, 1
+add %t21, %t19, %t20
+load %t22, %t21(0) 
+greater %t23, %t18, %t22
+jf %t23, R06
+mov %t24, %r1026
+load %t25, %t24(0) 
+mov %r1028, %t25
+mov %t26, %r1026
+mov %t27, %r1026
+mov %t28, 1
+add %t29, %t27, %t28
+load %t30, %t29(0) 
+store %t30, %t26(0)
+mov %t31, %r1026
+mov %t32, 1
+add %t33, %t31, %t32
+mov %t34, %r1028
+store %t34, %t33(0)
+jump R07
+label R06
+label R07
+add %r1026, %r1026, 1
+jump R04
+label R05
+add %r1025, %r1025, 1
+jump R02
+label R03
+printf "Ordenado: "
+mov %t35, 0
+mov %r1025, %t35
+label R08
+mov %t36, %r1024
+less %t37, %r1025, %t36
+jf %t37, R09
+mov %t38, %r1025
+load %t39, %t38(0) 
+printv %t39 
+printf " "
+add %r1025, %r1025, 1
+jump R08
+label R09
+printf "\n"
+

@@ -1,0 +1,19 @@
+Ouro i;
+Ouro N;
+Ouro vetor[100];
+
+GritarProMar abrirmapa "Tamanho: " fecharmapa;
+Espia abrirmapa N fecharmapa;
+
+GritarProMar abrirmapa "Elementos: " fecharmapa;
+Navegar abrirmapa i -> 0; i <= N - 1; i++ fecharmapa {
+ Espia abrirmapa vetor[i] fecharmapa;
+}
+
+GritarProMar abrirmapa "Contratio: " fecharmapa;
+i -> N-1;
+Remar abrirmapa i >=0 fecharmapa{
+ GritarProMar abrirmapa vetor[i], " " fecharmapa;
+ i -> i - 1;
+}
+GritarProMar abrirmapa "\n" fecharmapa;

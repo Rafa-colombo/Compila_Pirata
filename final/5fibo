@@ -1,0 +1,23 @@
+Ouro ter1;
+Ouro ter2;
+Ouro prox;
+Ouro N;
+Ouro i;
+
+ter1 -> 0;
+ter2 -> 1;
+
+GritarProMar abrirmapa "Digite tamanho: " fecharmapa;
+Espia abrirmapa N fecharmapa;
+
+Remar abrirmapa i < N fecharmapa {
+ Vendaval abrirmapa i <= 1 fecharmapa {
+ prox -> i; 
+} Calmaria {
+   prox -> ter1 + ter2;
+   ter1 -> ter2;
+   ter2 -> prox;
+ }
+ GritarProMar abrirmapa prox, "\n" fecharmapa;
+  i -> i + 1;
+}

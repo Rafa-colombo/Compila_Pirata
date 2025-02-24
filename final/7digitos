@@ -1,0 +1,18 @@
+Ouro N;
+Ouro ndigs;
+Ouro soma;
+
+soma -> 0;
+ndigs -> 0;
+
+GritarProMar abrirmapa "Digite um numero pos: " fecharmapa;
+Espia abrirmapa N fecharmapa;
+
+Remar abrirmapa N > 0 fecharmapa {
+ soma -> soma + abrirmapa N % 10 fecharmapa;
+ ndigs -> ndigs + 1;
+ N -> N / 10;
+}
+
+GritarProMar abrirmapa "O numero tem " , ndigs , " digitos\n" fecharmapa;
+GritarProMar abrirmapa "A soma dos digitos eh ", soma , "\n" fecharmapa;

@@ -1,0 +1,29 @@
+Ouro moeda; 
+Ouro j;
+j -> 0;
+Ouro bau[5];
+Ouro h;
+Ouro i;
+Ouro u;
+
+
+Remar abrirmapa j < 10 fecharmapa {
+ GritarProMar abrirmapa j, "\n" fecharmapa;
+ j -> j + 1 ;
+}
+
+GritarProMar abrirmapa "Escreva menor que 10: " fecharmapa;
+Espia abrirmapa u fecharmapa;
+
+h -> u;
+Remar abrirmapa h < 100 fecharmapa { GritarProMar abrirmapa "Break while\n" fecharmapa; PularDoNavio; }
+
+Navegar abrirmapa i -> 0; i < 5; i++ fecharmapa {bau[i] -> i;}
+
+Remar abrirmapa u < 10 fecharmapa { 
+ GritarProMar abrirmapa u fecharmapa;
+ u -> u + 1;
+}
+
+
+

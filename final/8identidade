@@ -1,0 +1,18 @@
+Ouro i;
+Ouro j;
+Ouro n;
+Ouro el;
+
+GritarProMar abrirmapa "Ordem da matriz: " fecharmapa;
+Espia abrirmapa n fecharmapa;
+
+Navegar abrirmapa i -> 1; i <= n; i++ fecharmapa {
+ Navegar abrirmapa j -> 1; j <= n; j++ fecharmapa {
+  Vendaval abrirmapa i == j fecharmapa {
+   el -> 1;
+  } Calmaria { el -> 0; }
+  Vendaval abrirmapa j > 1 fecharmapa {GritarProMar abrirmapa " " fecharmapa;}
+  GritarProMar abrirmapa el fecharmapa;
+ }
+ GritarProMar abrirmapa "\n" fecharmapa;
+}

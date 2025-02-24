@@ -1,0 +1,10 @@
+Ouro var;
+var -> 0;
+
+Espia abrirmapa var fecharmapa;
+
+Vendaval abrirmapa var == 4 fecharmapa { var -> 0; GritarProMar abrirmapa var fecharmapa;}
+
+Vendaval abrirmapa var >= 5 fecharmapa { var -> 0; } Calmaria { var -> 10; }
+
+
